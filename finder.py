@@ -1,10 +1,11 @@
 import time
 from twilio.rest import Client
 from cowin_api import CoWinAPI
+import datetime
 
 
 district_id_pkd = '308'  #Enter your district id 
-date = 'DD-MM-YYYY'       #Enter date
+date = datetime.datetime.now().strftime("%d/%m/%y")   #Today's date
 
 centre = []
 cowin = CoWinAPI()
