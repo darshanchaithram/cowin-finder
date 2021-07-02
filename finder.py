@@ -8,6 +8,7 @@ district_id_pkd = '308'  #Enter your district id
 date = datetime.datetime.now().strftime("%d/%m/%y")   #Today's date
 
 centre = []
+centre_pkd = []
 cowin = CoWinAPI()
 
 def send_message(centre, district_id):
@@ -15,12 +16,13 @@ def send_message(centre, district_id):
     auth_token = 'xxxxxxxxxxxxxxxxx'   #Enter your twilio authorisation token here
 
     client = Client(account_sid, auth_token)
-    message = client.messages.create(
-        from_='000000000',   #Enter phone number provided by twilio
-        body=(f'Hello xxxxx, Covid-19 vaccine available in your district now! {centre}'),
-        to='0000000000' #Enter your phone number here
-    )
-    print(message.sid)
+    if(centre_pkd != centre):
+        message = client.messages.create(
+            from_='000000000',   #Enter phone number provided by twilio
+            body=(f'Hello xxxxx, Covid-19 vaccine available in your district now! {centre}'),
+            to='0000000000' #Enter your phone number here
+        )
+        print(message.sid)
 
 def vaccine_find(district_id,date):
     centre = []
