@@ -23,7 +23,8 @@ def send_message(centre, district_id):
             to='0000000000' #Enter your phone number here
         )
         print(message.sid)
-
+        centre_pkd = centre
+        
 def vaccine_find(district_id,date):
     centre = []
     found = 0
