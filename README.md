@@ -19,5 +19,12 @@ Getting vaccine slots through cowin portal is getting more difficult nowadays.
 - Easy to add more number of SMS receivers.
 
 ### Getting Started
+- Save the code in your system
+- Create an account in twilio (twilio is used to send SMS)
+- Add a Twilio number as per your trial plan
+- Open the python script and add the necessary information
+- Run and take a nap. It will notify when a vaccine slot is available
 
+
+### More to be updated soon :)
 
