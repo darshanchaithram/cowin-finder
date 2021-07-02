@@ -14,13 +14,12 @@ def send_message(centre, district_id):
     auth_token = 'xxxxxxxxxxxxxxxxx'   #Enter your twilio authorisation token here
 
     client = Client(account_sid, auth_token)
-    if(district_id == '308'):
-        message = client.messages.create(
-            from_='000000000',   #Enter phone number provided by twilio
-            body=(f'Hello xxxxx, Covid-19 vaccine available in your district now! {centre}'),
-            to='0000000000' #Enter your phone number here
-        )
-        print(message.sid)
+    message = client.messages.create(
+        from_='000000000',   #Enter phone number provided by twilio
+        body=(f'Hello xxxxx, Covid-19 vaccine available in your district now! {centre}'),
+        to='0000000000' #Enter your phone number here
+    )
+    print(message.sid)
 
 def vaccine_find(district_id,date):
     centre = []
