@@ -1,10 +1,10 @@
 # cowin-finder
 Covid Vaccine availability finder for India
 
-## Table of contents
+### Table of contents
 
 
-## Introduction
+### Introduction
 
 Getting vaccine slots through cowin portal is getting more difficult nowadays.
 
@@ -12,12 +12,12 @@ Getting vaccine slots through cowin portal is getting more difficult nowadays.
 - Python + Cowin API + Twilio
 
 
-# Salient Features
+### Salient Features
 
 - Easy to use and host on any cloud based platform such as heroku
 - SMS Notification
 - Easy to add more number of SMS receivers.
 
-# Getting Started
+### Getting Started
 
 
