@@ -4,7 +4,7 @@ from cowin_api import CoWinAPI
 
 
 district_id_pkd = '308'  #Enter your district id 
-date = '03-07-2021'       #Enter date
+date = 'DD-MM-YYYY'       #Enter date
 
 centre = []
 cowin = CoWinAPI()
